@@ -5,7 +5,7 @@ Inspired by the Quest Helper RuneLite plugin, this plugin will guide you step by
 
 
 # Resources
-  - [RuneLite Wiki](https://github.com/runelite/runelite/wiki  )
+  - [RuneLite Wiki](https://github.com/runelite/runelite/wiki)
     - Scroll down the right panel for development documentation 
   - [RuneLite Plugin Hub Documentation](https://github.com/runelite/plugin-hub/blob/master/README.md)
   - [Creating Plugin Config Panel](https://github.com/runelite/runelite/wiki/Creating-plugin-config-panels)
