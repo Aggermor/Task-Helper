@@ -3,6 +3,9 @@ package com.TaskHelper;
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
+import net.runelite.client.config.Range;
+
+import java.awt.Color;
 
 @ConfigGroup("Task Helper")
 public interface TaskHelperConfig extends Config
@@ -18,15 +21,62 @@ public interface TaskHelperConfig extends Config
 		return "Hello";
 	}
 
-	// This is how you create a new config panel. I'm nto sure how to implement it into the plugin yet
+	// Boolean Checkbox
 	@ConfigItem(
-			position = 2,
-			keyName = "config2",
-			name = "example of another config item checkbox", // how does it know it's a checkbox?
-			description = "Configures whether or not this config is true or false"
+			keyName = "configBoolean",
+			name = "Boolean Config Item",
+			description = "This is an example of a boolean config item"
 	)
-	default boolean config2()
-	{
+	default boolean exampleBooleanConfig() {
 		return true;
+	}
+
+	// Integer Range
+	@ConfigItem(
+			keyName = "configInteger",
+			name = "Integer Config Item",
+			description = "This is an example of an integer config item"
+	)
+	@Range(
+			min = 1,
+			max = 10000
+	)
+	default int exampleIntegerConfig() {
+		return 1;
+	}
+
+	// String Text Box
+	@ConfigItem(
+			keyName = "configString",
+			name = "String Config Item",
+			description = "This is an example of a string config item"
+	)
+	default String exampleStringConfig() {
+		return "default";
+	}
+
+	// Color Picker
+	@ConfigItem(
+			keyName = "configColor",
+			name = "Color Config Item",
+			description = "This is an example of a color config item"
+	)
+	default Color exampleColorConfig() {
+		return Color.WHITE;
+	}
+
+	// Enum  Drop-Down
+	public enum ExampleEnum {
+		VALUE1,
+		VALUE2,
+		VALUE3
+	}
+	@ConfigItem(
+			keyName = "configEnum",
+			name = "Enum Config Item",
+			description = "This is an example of an enum config item"
+	)
+	default ExampleEnum exampleEnumConfig() {
+		return ExampleEnum.VALUE1;
 	}
 }
