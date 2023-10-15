@@ -40,4 +40,7 @@ Following [this YouTube video](https://www.youtube.com/watch?v=mB5Wxfx0Ork&ab_ch
 # Following the [RuneLite Wiki](ttps://github.com/runelite/plugin-hub/blob/master/README.md#creating-new-plugins)
   - [x] Added files from [example repository](https://github.com/runelite/example-plugin)
     - Do I need these? I dislike having code/files that I don't understand how they work.
-  - [ ] 
+  - [x] Added `icon.png` which is specifically 48x72 px
+    - from https://www.flaticon.com/search?word=task
+  - [ ] Added VM options to enable assertions `-ea`
+  - [ ] Run test of the plugin
