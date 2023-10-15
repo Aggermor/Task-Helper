@@ -35,12 +35,21 @@ Following [this YouTube video](https://www.youtube.com/watch?v=mB5Wxfx0Ork&ab_ch
 
   - Make a Git repository for the plugin
   - Clone the repository to IntelliJ
-  - MakingStan video wanted me to clone his repo, but I made my own... He then creates a "configuration" using his premade files from the repo. I'll have to figure this out later.
+  - MakingStan video wanted me to clone his repo, but I made my own... He then creates a "configuration" using his pre-made files from the repo. I'll have to figure this out later.
 
 # Following the [RuneLite Wiki](ttps://github.com/runelite/plugin-hub/blob/master/README.md#creating-new-plugins)
   - [x] Added files from [example repository](https://github.com/runelite/example-plugin)
     - Do I need these? I dislike having code/files that I don't understand how they work.
   - [x] Added `icon.png` which is specifically 48x72 px
     - from https://www.flaticon.com/search?word=task
-  - [ ] Added VM options to enable assertions `-ea`
-  - [ ] Run test of the plugin
+  - [x] In IntelliJ top right click `edit configurations` this might be under a drop-down
+    - [x] Select `Add new configuration`
+    - [x] Select `Application`
+    - [x] On the right name the configuration
+    - [x] Under build and run where it says "module not specified" select: `java 11` or `corretto-11`
+    - [x] The next box says "-cp \<no module\>" select: `example.test`
+    - [x] The next box says "Main Class" navigate to:
+      - Task-Helper\src\test\java\com\TaskHelper\ `com.TaskHelper.TaskHelperPluginTest`
+    - [x] Click the drop-down that says "Modify options" then select: `VM Options`
+      - [x] In the "VM options" box type `-ea` to enable assertions
+    - [x] Click `Apply` and `OK` then run that configuration on the top right of IntelliJ to test your plugin (green play button triangle)

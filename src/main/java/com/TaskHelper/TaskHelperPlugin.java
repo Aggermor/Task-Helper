@@ -1,4 +1,4 @@
-package com.example;
+package com.TaskHelper;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -11,10 +11,12 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
+import java.awt.Color; //gpt
+import net.runelite.client.chat.ChatMessageBuilder; //gpt
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Task Helper"
 )
 public class TaskHelperPlugin extends Plugin
 {
@@ -41,7 +43,11 @@ public class TaskHelperPlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
+			final String message = new ChatMessageBuilder()
+					.append(Color.RED, "Example says " + config.greeting())
+					.build();
+
+			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", message, null);
 		}
 	}
 
