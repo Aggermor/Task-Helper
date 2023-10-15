@@ -1,16 +1,22 @@
 # Task-Helper
 Inspired by Quest Helper runelite plugin; This plugin will guide you step by step in doing recurring tasks.
 
-# Notes
-This is the first time I've created a RuneLite plugin so for now I will place my notes for learning about this project here.
+*This is the first time I've created a RuneLite plugin so for now I will place my notes for learning about this project here.*
+
 
 # Resources
   * [RuneLite Wiki](https://github.com/runelite/runelite/wiki  )
     * Scroll down the right panel for development documentation 
   * [RuneLite Plugin Hub Documentation](https://github.com/runelite/plugin-hub/blob/master/README.md)
-  * [Youtube Video: "How to create a Runelite plugin" by MakingStan](https://www.youtube.com/watch?v=mB5Wxfx0Ork&ab_channel=MakingStan)
+  * [Creating Plugin Config Panel](https://github.com/runelite/runelite/wiki/Creating-plugin-config-panels)
+  * [Creating Development Logging](https://github.com/runelite/runelite/wiki/Plugin-Development-Logging)  
+  * [YouTube Video: "How to create a Runelite plugin" by MakingStan](https://www.youtube.com/watch?v=mB5Wxfx0Ork&ab_channel=MakingStan)
   * ["Creator's Kit Tutorial | A RuneLite Plugin for Creating Custom Scenes" by ScretMonge](https://www.youtube.com/watch?v=LRUrMMfdy60&ab_channel=ScreteMonge)
-  * [RuneLite Development Discord](https://discord.gg/runelite)
+  * [RuneLite Development Discord](https://discord.gg/runelite)  
+Main Links:
+  * https://github.com/runelite/runelite/wiki/Building-with-IntelliJ-IDEA
+  * https://github.com/runelite/runelite/wiki/Creating-plugin-config-panels
+  * https://github.com/runelite/runelite/wiki/Code-Conventions
 
 
 # Setup the Development Environment
@@ -26,5 +32,7 @@ Following [this YouTube video](https://www.youtube.com/watch?v=mB5Wxfx0Ork&ab_ch
     * ~~Should I get x86 architecture?~~ Just install it through IntelliJ per the RuneLite wiki and the YouTube guide.
 
   * Make a Git repository for the plugin
-  * Clone the repository to InteliJ
-  * MakingStan video wanted me to clone his repo but I made my own... He then creates a "configuration" using his premade files from the repo. I'll have to figure this out later.
+  * Clone the repository to IntelliJ
+  * MakingStan video wanted me to clone his repo, but I made my own... He then creates a "configuration" using his premade files from the repo. I'll have to figure this out later.
+
+# Following the [RuneLite Wiki](ttps://github.com/runelite/plugin-hub/blob/master/README.md#creating-new-plugins)
