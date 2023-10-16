@@ -1,4 +1,4 @@
-package com.KittenRename;
+package com.RenameKitten;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
@@ -6,8 +6,8 @@ import net.runelite.client.config.ConfigItem;
 
 import java.awt.*;
 
-@ConfigGroup("Kitten Rename")
-public interface KittenRenameConfig extends Config
+@ConfigGroup("Rename Kitten")
+public interface RenameKittenConfig extends Config
 {
 	@ConfigItem(
 			position = 1,

@@ -1,4 +1,4 @@
-package com.KittenRename;
+package com.RenameKitten;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,20 +14,20 @@ import java.awt.*;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Kitten Rename",
+	name = "Rename Kitten",
 	description = "Rename the Kitten that is following the local player",
 	tags = {"kitten", "rename", "npc", "pet"},
 	loadWhenOutdated = true,
 	enabledByDefault = false
 )
 
-public class KittenRenamePlugin extends Plugin
+public class RenameKittenPlugin extends Plugin
 {
 	@Inject
 	private Client client;
 
 	@Inject
-	private KittenRenameConfig config;
+	private RenameKittenConfig config;
 
 	@Override
 	protected void startUp() throws Exception
@@ -88,8 +88,8 @@ public class KittenRenamePlugin extends Plugin
 	}
 
 	@Provides
-    KittenRenameConfig provideConfig(ConfigManager configManager)
+	RenameKittenConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(KittenRenameConfig.class);
+		return configManager.getConfig(RenameKittenConfig.class);
 	}
 }
