@@ -16,11 +16,9 @@ import java.awt.*;
 import net.runelite.client.chat.ChatMessageBuilder;
 import net.runelite.client.ui.overlay.OverlayManager;
 
-
-
 @Slf4j
 @PluginDescriptor(
-	name = "Task Helper"
+		name = "Task Helper"
 )
 public class TaskHelperPlugin extends Plugin
 {

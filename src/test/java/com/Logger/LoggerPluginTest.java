@@ -1,13 +1,13 @@
-package com.TaskHelper;
+package com.Logger;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class TaskHelperPluginTest
+public class LoggerPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(TaskHelperPlugin.class);
+		ExternalPluginManager.loadBuiltin(LoggerPlugin.class);
 		RuneLite.main(args);
 	}
 }

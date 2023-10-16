@@ -21,7 +21,7 @@ public class MovementStatusOverlay extends Overlay
         this.client = client;
         setPosition(OverlayPosition.DYNAMIC);
         setPriority(OverlayPriority.HIGH);
-        setMovable(true); // Make the overlay movable
+        setMovable(true); // Make the overlay movable, redundant?
     }
 
     @Override

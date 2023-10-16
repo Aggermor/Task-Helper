@@ -1,13 +1,13 @@
-package com.TaskHelper;
+package com.KittenRename;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class TaskHelperPluginTest
+public class KittenRenamePluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(TaskHelperPlugin.class);
+		ExternalPluginManager.loadBuiltin(KittenRenamePlugin.class);
 		RuneLite.main(args);
 	}
 }
